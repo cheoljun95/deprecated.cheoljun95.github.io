@@ -1,6 +1,6 @@
 ---
 title: "Bachelor’s Thesis"
-excerpt: "Neural Symbolic Visual Question Answering System: application to real world data and limitation<br/><img src='/images/NS-GQA_low.png'>"
+excerpt: "Neural Symbolic Visual Question Answering System: application to real world data and limitation<br/><img src='/images/NS-GQA_2.png'>"
 collection: portfolio
 ---
 
