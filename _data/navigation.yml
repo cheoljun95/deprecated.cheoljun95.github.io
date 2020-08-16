@@ -9,8 +9,5 @@ main:
   #- title: "Blog Posts"
     #url: /year-archive/
     
-  - title: "CV"
-    url: https://anaaack.github.io/files/CheolJunCho_CV_2020.pdf
-    
   - title: "Publications"
     url: /publications/
