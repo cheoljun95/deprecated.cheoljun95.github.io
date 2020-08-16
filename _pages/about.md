@@ -34,27 +34,7 @@ Experience
 ======
 <br> 
 
-- ***Research Intern;*** **JeeLab, Center for Neuroscience, Brain Science Institute, KIST Seoul, Korea (Jul 2020 - Present)** <br>
-
-<br>
-Computational Neuroscience; Cognitive Neuroscience; System Neuroscience
-Automated extracting tracking data from mice video
-Analyzed neural data and behavioral data to infer social hierarchy of mice
-KIST, Seoul, Korea
-Jul 2020 - Present
-SNU, Seoul, Korea
-Mar 2020 - Present
-Worked on computational modeling and hierarchical Bayesian analysis on behavioral and multi-modal data
-KAIST Interaction Laboratory (KIXLab) KAIST, Daejeon, Korea
-␣
-Summer Research Intern, Advisor: Prof. Juho Kim
-␣ Human Computer Interaction; Natural Language Processing
-Jun 2019 – Aug 2019
-␣ ␣
-␣
-Worked on speech act based chatbot project as part of national funded AI-flagship Designed/experimented deep learning model(bi-LSTM like) for speech act classification and explored word embedding models (word2bec, Globe, BERT)
-Tested on the Switchboard Dialog Act (SwDA) corpus and Verbal Response Mode dataset
-Computing and Memory Architecture Laboratory (CMALab)
-Research Intern, Advisor: Prof. Sungjoo Yoo
-␣ Computer Vision; Deep Learning
-Explored methods regarding computing efficiency of deep learning model Explored methods combining online-training and teacher-student framework
+- ***Research Intern;*** **JeeLab, Center for Neuroscience, Brain Science Institute, KIST, Seoul, Korea (Jul 2020 - Present)**
+- ***Research Assistant;*** **Computational Clinical Science Laboratory, SNU, Seoul, Korea (Jul 2020 - Present)**
+- ***Summer Research Intern;*** **KAIST Laboratory, KAIST, Daejeon, Korea (Jun 2019 - Aug 2019)**
+- ***Research Intern;*** **Computing and Memory Architecture Laboratory, SNU, Seoul, Korea (Dec 2018 - Jun 2019)**
