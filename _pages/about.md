@@ -34,8 +34,8 @@ Experience
 ======
 <br> 
 
-- **JeeLab, Center for Neuroscience, Brain Science Institute, KIST Seoul, Korea (Jul 2020 - Present)** <br>
->>>>*Research Intern, Advisor: Dr. Jee Hyun Choi*
+- ***Research Intern;*** **JeeLab, Center for Neuroscience, Brain Science Institute, KIST Seoul, Korea (Jul 2020 - Present)** <br>
+
 <br>
 Computational Neuroscience; Cognitive Neuroscience; System Neuroscience
 Automated extracting tracking data from mice video
