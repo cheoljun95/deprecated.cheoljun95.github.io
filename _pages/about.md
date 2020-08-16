@@ -26,3 +26,35 @@ Research Interest
 
 - **Computational Neuroscience** <br>
 <p style='text-align: justify;'> Research on human subject has limitation to study low-level mechanism. So I am also interested in the field of computational neuroscience to investigate the fundamental basis of intelligence. </p>
+
+
+<br> <br>
+
+Experience
+======
+<br> 
+
+- **JeeLab, Center for Neuroscience, Brain Science Institute, KIST Seoul, Korea (Jul 2020 - Present) ** <br>
+*Research Intern, Advisor: Dr. Jee Hyun Choi*
+<br>
+Computational Neuroscience; Cognitive Neuroscience; System Neuroscience
+Automated extracting tracking data from mice video
+Analyzed neural data and behavioral data to infer social hierarchy of mice
+KIST, Seoul, Korea
+Jul 2020 - Present
+SNU, Seoul, Korea
+Mar 2020 - Present
+Worked on computational modeling and hierarchical Bayesian analysis on behavioral and multi-modal data
+KAIST Interaction Laboratory (KIXLab) KAIST, Daejeon, Korea
+␣
+Summer Research Intern, Advisor: Prof. Juho Kim
+␣ Human Computer Interaction; Natural Language Processing
+Jun 2019 – Aug 2019
+␣ ␣
+␣
+Worked on speech act based chatbot project as part of national funded AI-flagship Designed/experimented deep learning model(bi-LSTM like) for speech act classification and explored word embedding models (word2bec, Globe, BERT)
+Tested on the Switchboard Dialog Act (SwDA) corpus and Verbal Response Mode dataset
+Computing and Memory Architecture Laboratory (CMALab)
+Research Intern, Advisor: Prof. Sungjoo Yoo
+␣ Computer Vision; Deep Learning
+Explored methods regarding computing efficiency of deep learning model Explored methods combining online-training and teacher-student framework
