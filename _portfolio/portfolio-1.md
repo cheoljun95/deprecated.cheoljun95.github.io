@@ -1,6 +1,6 @@
 ---
-title: "Portfolio item number 1"
-excerpt: "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+title: "Bachelor’s Thesis"
+excerpt: "Neural Symbolic Visual Question Answering System: application to real world data and limitation<br/><img src='/images/500x300.png'>"
 collection: portfolio
 ---
 
