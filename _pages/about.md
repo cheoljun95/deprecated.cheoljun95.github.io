@@ -23,5 +23,5 @@ I believe one of the best way of understanding something is to build it. With re
 - **Human Mind** <br> <br>
 Human mind is the most sophisticated machine with intelligence. I believe investigating the underlying process of human mind will lead to better understanding of general intelligence. I am mainly focused on computational approach, rigorously applying machine learning techniques.
 
--- **Computational Neuroscience** <br> <br>
+- **Computational Neuroscience** <br> <br>
 Research on human subject has limitation to study low-level mechanism. So I am also interested in the field of computational neuroscience to investigate the fundamental basis of intelligence.
