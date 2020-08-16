@@ -8,10 +8,11 @@ redirect_from:
   - /about.html
 ---
 
-About me
-======
+# About me <br> <br>
 
 Hi, I am an undergraduate student in department of Computer Science and Engineering at Seoul National University. My interest lies on a broad prespective of intelligence: natural intelligence, human mind and artificial intelligence.
+
+<br> <br>
 
 Research Interest
 ======
