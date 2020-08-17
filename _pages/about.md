@@ -23,7 +23,7 @@ Research Interest
 - **Human Mind**
 - **Computational Neuroscience** 
 
-<br><br>
+<br>
 [Learn more](https://anaaack.github.io/research_interest/)
 
 <br> <br>
