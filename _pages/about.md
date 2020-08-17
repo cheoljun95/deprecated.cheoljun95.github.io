@@ -22,7 +22,6 @@ Research Interest
 - **Engineering Intelligence**
 - **Human Mind**
 - **Computational Neuroscience** 
-
 <br>
 [Learn more](https://anaaack.github.io/research_interest/)
 
