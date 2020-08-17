@@ -1,5 +1,8 @@
 # main links links
 main:
+  - title: "Research Interests"
+    url: /research_interest/
+    
   - title: "CV"
     url: https://anaaack.github.io/files/CheolJunCho_CV_2020.pdf
 
