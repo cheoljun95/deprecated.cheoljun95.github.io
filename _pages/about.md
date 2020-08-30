@@ -16,12 +16,10 @@ redirect_from:
 
 Research Interest
 ======
-<br> 
 
-
-- **Engineering Intelligence**
-- **Human Mind**
-- **Computational Neuroscience** 
+- **Decoding Human Brain & Mind**
+- **Human-level Artificial Intelligence**
+- **Computational basis of Intelligence** 
 <br>
 
 [Learn more](https://anaaack.github.io/research_interest/)
