@@ -9,7 +9,7 @@ redirect_from:
 ---
 
 # About me 
-<p style='text-align: justify;'>Hi, I am a full-time research assistant at Computational Clinical Science Lab., Seoul National University (SNU). I am also a visiting research intern at Center for Neuroscience, Brain Science Institute, Korea Institute of Science and Technology (KIST). I graduated from the department of Computer Science and Engineering at SNU. My interest lies on a broad prespective of intelligence: natural intelligence, human mind and artificial intelligence. </p>
+<p style='text-align: justify;'>Hi, I am a full-time research assistant at Computational Clinical Science Lab., Seoul National University (SNU). I am also a visiting research intern at Center for Neuroscience, Brain Science Institute, Korea Institute of Science and Technology (KIST). I graduated from the department of Computer Science and Engineering at SNU. My interest lies on artificial intelligence, cognitive neuroscience, and computational neuroscience. My goald is to reveal how human mind emerge from our brains and to investigate how we can artificailly build human mind. </p>
 
 
 <br> <br>
