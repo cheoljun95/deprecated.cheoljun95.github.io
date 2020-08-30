@@ -10,7 +10,7 @@ redirect_from:
 {% include base_path %}
 
 - **Decoding Human Brain & Mind** <br>
-<p style='text-align: justify;'> Human mind is the most sophisticated machine with intelligence. How do objects or any kind of concepts are represented in human brains? What is the underlying process of human mind? I believe solutions for these questions will lead to better understanding of general intelligence. I am mainly focused on computational approach, applying various machine learning techniques to analyze braind data (e.g. fMRI, MEG). </p>
+<p style='text-align: justify;'> How do objects or any kind of concepts are represented in human brains? What is the underlying process of human mind and how does such process lead to the specific behavior? I believe solutions for these questions will lead to better understanding of general intelligence. I am mainly focused on computational approach, applying various machine learning techniques to analyze braind data (e.g. fMRI, MEG). </p>
 
 - **Human-level Artificial Intelligence** <br>
 <p style='text-align: justify;'> I believe one of the best way of understanding something is to build it. With recent burst of the field of AI, I have been fascinated in AI, especially in the artificial neural network. This led me to be engrossed in several projects in related field: natural language processing, computer vision and robotics. </p>
