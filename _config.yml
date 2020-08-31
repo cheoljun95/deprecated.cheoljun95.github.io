@@ -11,9 +11,9 @@ title                    : "Cheol Jun Cho"
 title_separator          : "-"
 name                     : &name "Cheol Jun Cho"
 description              : &description "Research Assistant at Computational Clinical Science Lab."
-url                      : https://anaaack.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://cheoljun95.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "ANAAACK/ANAAACK.github.io"
+repository               : "cheoljun95/cheoljun95.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
