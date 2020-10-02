@@ -4,7 +4,7 @@ excerpt: "Creative Integrated Design Course, SNU<br/><br/><img src='/images/Farm
 collection: portfolio
 ---
 
-<br><br><br><br>
+<br><br>
 
 <img src='/images/Farmhannong.png' align='middle' width='700' height='500'>
 
@@ -25,8 +25,6 @@ Finally, our team implemented the web application providing plant disease detect
 
 </p>
 
-
-<!--plantvillage refer. https://arxiv.org/abs/1511.08060 -->
 
 Reference <br><br>
 
