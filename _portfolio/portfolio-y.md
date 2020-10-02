@@ -3,6 +3,9 @@ title: "Plant Disease Detecting Web Service"
 excerpt: "Creative Integrated Design Course, SNU<br/><br/><img src='/images/Farmhannong.png' align='middle' width='700' height='500'>"
 collection: portfolio
 ---
+
+<br><br><br><br>
+
 <img src='/images/Farmhannong.png' align='middle' width='700' height='500'>
 
 <p style="text-align:justify;">
@@ -17,7 +20,7 @@ The plant disease detection was tackled by solving the image classification prob
 
 To improve users' confidence in our system, we also implemented a feature visualization. We utilized Guided GRAD-CAM [4] techniques to highlight which parts of the plant image are attributed to the specific classification results. <br><br>
 
-Finally, our team implemented web application providing the plant disease detection & visualization, and the relevant product recommendation. 
+Finally, our team implemented the web application providing plant disease detection & visualization, and relevant product recommendation. <br><br>
 
 
 </p>
