@@ -12,7 +12,7 @@ collection: portfolio
 
 This project was conducted as a part of 2018 Fall Creative Integrated Design Course in Seoul National University, which aimed to provide opportunities to participate in university-industry projects. <br><br>
 
-I was involved in developing a plant disease detection system & web application as a team of four. Our team collaborated with LG Farm Hannong, the biggest agricultural company in South Korea, under the supervision of Prof. Yeong-Gil Shin, SNU. My role was implementing and testing deeplearning models, and visualizing the model interpretation, and implementing the backend server. <br><br>
+I was involved in developing a plant disease detection system & web application as a team of three. Our team collaborated with LG Farm Hannong, the biggest agricultural company in South Korea, under the supervision of Prof. Yeong-Gil Shin, SNU. My role was implementing and testing deeplearning models, and visualizing the model interpretation, and implementing the backend server. <br><br>
 
 The plant disease detection was tackled by solving the image classification problem, which categorizes the pathological degree of each disease (e.g. unaffected/early/terminal marssonia blotch). As the dataset provided from Farm Hannong was limited, we also used public plant disease dataset from PlantVillage [1] to facilitate transfer learning [2]. ResNet [3] with 34 layers showed the best performance (96.89 %) on validation data in the experiment. 
 
