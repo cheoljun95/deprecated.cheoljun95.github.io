@@ -4,4 +4,5 @@ excerpt: "Creative Integrated Design Course, SNU<br/><br/><img src='/images/Farm
 collection: portfolio
 ---
 
-This is an item in your portfolio. It can be have images or nice text. If you name the file .md, it will be parsed as markdown. If you name the file .html, it will be parsed as HTML. 
+This project is conducted as a part of Creative Integrated Design Course in Seoul National University, which aims to provide opportunities to participate in university-industry projects. I was involved in developing a plant disease detection system & web application as a team of four. Our team collaborated with LG Farm Hannong, the biggest agricultural company in South Korea, under supervision of Prof. Yeong-Gil Shin, SNU.
+
