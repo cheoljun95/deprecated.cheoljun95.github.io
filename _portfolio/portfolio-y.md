@@ -10,7 +10,7 @@ This project was conducted as a part of 2018 Fall Creative Integrated Design Cou
 
 I was involved in developing a plant disease detection system & web application as a team of four. Our team collaborated with LG Farm Hannong, the biggest agricultural company in South Korea, under the supervision of Prof. Yeong-Gil Shin, SNU. <br><br>
 
-The plant disease detection was tackled by the image classification problem by categorizing the pathological degree of each disease (e.g. unaffected/early/terminal marssonia blotch). As the dataset provided from Farm Hannong was limited, we also used public plant disease dataset from PlantVillage [1] to facilitate transfer learning [2]. By training ResNet [3] with 34 layers, we could achieve 96.89 % validation accuracy. <br><br>
+The plant disease detection was tackled by solving the image classification problem by categorizing the pathological degree of each disease (e.g. unaffected/early/terminal marssonia blotch). As the dataset provided from Farm Hannong was limited, we also used public plant disease dataset from PlantVillage [1] to facilitate transfer learning [2]. By training ResNet [3] with 34 layers, we could achieve 96.89 % validation accuracy. <br><br>
 
 
 <img src="images/200x200.png">
