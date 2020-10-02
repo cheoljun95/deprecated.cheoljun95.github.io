@@ -1,12 +1,12 @@
 ---
 title: "Plant Disease Detecting Web Service"
-excerpt: "Creative Integrated Design Course, SNU<br/><br/><img src='/images/Farmhannong.png' align='middle' width='1000' height='700'>"
+excerpt: "Creative Integrated Design Course, SNU<br/><br/><img src='/images/Farmhannong.png' align='middle' width='700' height='500'>"
 collection: portfolio
 ---
 
 <br><br>
 
-<img src='/images/Farmhannong.png' align='middle' width='700' height='500'>
+<img src='/images/Farmhannong.png' align='middle' width='1000' height='700'>
 
 <p style="text-align:justify;">
 
