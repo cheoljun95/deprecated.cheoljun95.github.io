@@ -70,7 +70,7 @@ The executer module is a module that executes the aforementioned state machine. 
 
 </p>
    
- <p style="text-align:center;"> <img src='/images/2020BT/fig_algorithm_1.png' align='middle' width=700' height='500'> <br> <font size = "2"> Algorithm 1.  Executer Algorithm.
+ <p style="text-align:center;"> <img src='/images/2020BT/figure_3.png' align='middle' width='800' height='500'> <br> <font size = "2"> Figure 3. An example of executer module process.
  </font> <br> <br> </p>
 
 <p style="text-align:justify;">
