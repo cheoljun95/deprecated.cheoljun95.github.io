@@ -16,6 +16,8 @@ The most efficient form of data in the task of reasoning based on relationship i
 
 This study uses the NS-VQA approach of [1]. In [1], the applied CLEVR dataset is a dataset with very limited types and properties of objects. Conversely, a GQA dataset is a dataset that is closer to the real-world by encompassing hundreds of types, attributes, and relationships. Also, the dataset provides a label for the Symbolic program. This study aims to apply the NS-VQA system to GQA datasets. The system is composed of the following three modules: a detector module that generates a scene graph from an image, an encoder module that extracts a symbolic program from a natural language question, and an executor module that yields the answer from the scene graph and the symbolic program. In this study, the performance of the system without end-to-end learning is reported, and the limitation of NS-VQA approach for the real-world is analyzed. <br><br>
 
+<p style="text-align:center;"><font size="5">  <br> Method  </font><br> <br> </p>
+
 Detector Module <br><br>
 
 </p>
@@ -65,6 +67,7 @@ Executer Module <br><br>
 
 The executer module is a module that executes the aforementioned state machine. Initially, all the activations of nodes and edges are initialized to 1 and are filtered out by solving instructions. Here, the value of the state was defined conclusively ( state(i) {0,1} ). For this purpose, a threshold was set for each concept to activate or filter out nodes or edges ( match(i), symbol), match(i,j), symbol {0,1} in Algorithm 1 ). The threshold value was set as the minimum value allowing 90 % recall for each concept, which can be derived from the statistics of the detector module. If any matching label is present, the state must be activated, which is simple to implement using the max function (Algorithm 1). <br><br>
 
+
 </p>
    
  <p style="text-align:center;"> <img src='/images/2020BT/algorithm_1.png' align='middle' width=500' height='500'> <br> <font size = "2"> Algorithm 1.  Executer Algorithm.
@@ -72,6 +75,20 @@ The executer module is a module that executes the aforementioned state machine. 
 
 <p style="text-align:justify;">
   
+
+<p style="text-align:center;"><font size="5">  <br> Results  </font><br> <br> </p>
+
+The experiment was conducted upon the balanced version of GQA dataset, which eliminated biases in the distribution of answers. The dataset consists of about 940 K training data and 130 K validation data for questions, and the number of photos corresponding to each division is about 74,000 and 10,000. The model was implemented with PyTorch running on a single NVIDIA Titan X GPU.<br><br>
+
+First, the results of the Detector module are as follows.  The mAP metric is calculated based on IoU > 0.5. Graph recall averages the proportion of correct answers in the top 20. The performance of the attribute head is not reported as it is hard to validate because attribute categories are not exclusive and labeling is not complete.  The performance of the detector module is not very good as shown in Table 1.<br><br>
+
+</p>
+   
+ <p style="text-align:center;"> <img src='/images/2020BT/table_1.png' align='middle' width='200' height='200'> <br> <font size = "2"> Table 1. Detector module fitting results. 
+ </font> <br> <br> </p>
+
+<p style="text-align:justify;">
+
 Reference <br><br>
 
 [1] Yi, K., Torralba, A., Wu, J., Kohli, P., Gan, C., and Tenenbaum, J. B. (2018). Neural-symbolic VQA: Disentangling reasoning from vision and language understanding. Advances in Neural Information Processing Systems (NeurIPS), 1031–1042, 2018.<br><br>
