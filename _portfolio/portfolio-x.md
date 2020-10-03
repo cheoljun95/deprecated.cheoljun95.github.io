@@ -21,13 +21,9 @@ The lack of interaction with robots is one of the major sources of users' low co
 
 
 </p>
-
-<img src='/images/demo.gif' align='middle' width='700' height='500'>
-
-</p>
    
- <p style="text-align:center;"> <img src='/images/demo.gif' align='middle' width='700' height='500'> <br> <font size = "3"> Demo 
- </font> <br> <br> </p>
+ <p style="text-align:center;"> <font size = "3"> Demo 
+ </font> <br> <img src='/images/demo.gif' align='middle' width='700' height='500'>  <br> </p>
 
 <p style="text-align:justify;">
 
