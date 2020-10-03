@@ -50,16 +50,53 @@ Utterance feature extractor consists of Embedding layer, Bi-LSTM and Pooling lay
 
 Logit (Fig.3-(a)) has a relatively simple structure. The utterance vectors are processed through Bi-LSTM, and the probability of each speech act category is obtained by applying Softmax to the output hidden states of Bi-LSTM. Before the utterance vectors entering Bi-LSTM, the additional informative data are augmented: a flag identifying speakers, and a flag for indicating whether the utterance ends with a question mark. <br><br>
 
-<p style="text-align:center;"> <img src='/images/2019BMB/figure_3.png' align='middle' width='1000' height='2000'> <br> <font size = "2"> Figure 3. Architecture of utterance feature extractor (b) and logit (a).</font> <br> <br> </p>
+<p style="text-align:center;"> <img src='/images/2019BMB/figure_3.png' align='middle' width='800' height=' 1600'> <br> <font size = "2"> Figure 3. Architecture of utterance feature extractor (b) and logit (a).</font> <br> <br> </p>
 <p style="text-align:justify;">
  
-Pooling method
+Pooling method <br> <br>
 
-<p style="text-align:center;"> <img src='/images/2019BMB/figure_4.png' align='middle' width='1000' height='2000'> <br> <font size = "2"> Figure 4. Diagram of each pooling method. (a) attention pooling, (b) average pooling, (c) last pooling. </font> <br> <br> </p>
+<p style="text-align:center;"> <img src='/images/2019BMB/figure_4.png' align='middle' width='800' height='700'> <br> <font size = "2"> Figure 4. Diagram of each pooling method. (a) attention pooling, (b) average pooling, (c) last pooling. </font> <br> <br> </p>
 <p style="text-align:justify;">
  
 
 This study proposes Attention pooling, as a novel pooling method utilizing Attention Mechanism, and compares with the existing method, Average pooling [1]. Pooling is the aggregation of a column of hidden state vectors produced by Bi-LSTM to obtain a single unit of utterance vector. Average pooling (Fig.4-(b)) is the method of averaging the hidden state vectors, and Last pooling (Fig.4-(c) is the method of using the last hidden state. Attention pooling (Fig.4-(a) proposed in this study is a method of weighting the hidden state vectors by calculating the attention weight through the Attention module. As a result, the Attention module is trained to yield attention weights in accordance with relevant significance of the given pieces. FC (Fullly Connected) network and Bi-LSTM are tested as candidate structures for the Attention Module. <br> <br>
+
+Dataset & Experimental setting <br> <br>
+
+SwDA (Switch Board Dialogue Act Corpus, 2000) dataset is used to test the performance of the suggested models. The SwDA consists of 1,115 call chat data and a total of about 210,000 utterances. Each utterance is labeled into 42 speech act categories according to the taxonomy from DAMSL (Dialog Act Markup in Several Layers) [6]. The policy for splitting dataset is same as existing studies (Training:1003, Validation:112, Test:19). <br> <br>
+
+Adam optimizer is used and the initial learning rate is set to 0.01. After 100 epochs, the learning rate is lowered to 0.0001 for fine tuning. The dimension size for hidden states in all Bi-LSTM is 128, the batch size is 128, and the dropout rate is 0.2. The dimension of Attention Module is 16. Embedding layer utilizes the pretrained model (Glove [4]) without extra learning. The word length for each utterance is fixed to 36 with zero-padding. For training, 8 pieces of consecutive utterance are used as input, and the entire conversation for evaluation to calculate the accuracy. It was implemented in Python 3.6 using Pytorch 1.10 and trained using NVIDIA Titan X GPU (12GB). <br> <br>
+
+Results <br> <br>
+
+Comparison of Pooling Methods <br> <br>
+
+</p>
+   
+ <p style="text-align:center;"> <img src='/images/2019BMB/table_3.png' align='middle' width='400' height='400'> <br> <font size = "2"> Table 2. Accuracy(precision) of each method and previous study. </font> <br> <br> </p>
+
+<p style="text-align:justify;">
+
+Table 2 is the result of training models with different pooling methods. Attention Pooling shows the highest performance with 80.7 percent of validation accuracy, which is higher than the existing pooling methods, the last pooling and the average pooling. Also, the performance of the proposed model is comparable with the state-of-the-art model by Chen et al[2], indicating the validity of the model. <br> <br>
+
+The effect of the different structures of Attention Module, FC or Bi-LSTM, is not significant. This is because the hidden states from Bi-LSTM of Utterance feature extractor, which are input data of Attention Model, already have information about the context. Therefore, even in FC structure, the contexts are embedded in the attention weights. <br><br>
+
+Qualitative Analysis of Attention <br> <br>
+
+<p style="text-align:center;"> <img src='/images/2019BMB/figure_6.png' align='middle' width='800' height='700'> <br> <font size = "2"> Figure 5. Qualitative analysis of attention weights. </font> <br> <br> </p>
+<p style="text-align:justify;">
+
+One of the benefits of using Attention Mechanism is that it is easy to intuitively show how the model works. In this study, attention weights are extracted from Attention Module for qualitative analysis. The attention weights near the subject words in utterance tend to have higher values, meaning that the information of those parts significantly affects the classification.<br> <br>
+
+From this result, we can infer that subjects and predicates might be critical for recognizing speech acts. As those parts are adjacent in sentence structure of English, the attention weights near the subject words are required to have high values.<br> <br>
+
+Conclusion<br> <br>
+
+
+Finally, the model proposed in this study achieved 80.73% validation accuracy. This is quite competitive considering the existing SOTA model (chen et al, CRF-ASN[2] : 80.8%) and the actual human accuracy (84%). It is less accurate than CRF-ASN, but while the CRF-ASN model applies a very complex methodology, this model has a relatively simple structure.<br> <br>
+
+The pooling method using Attention Mechanism allow us to intuitively interpret the model's process as well as improve the performance. This certainly contributes to the field of interpretable artificial intelligence. CRF-ASN also applies the Attention Mechanism, but not to the pooling method, but to the CRF (Conditional Random Field) structure. In other words, the model in this study has the advantage of being able to interpret the operation of the model in the word level, showing which parts of utterances are critical for recognizing speech acts.<br> <br> </p>
+
 
 
 
