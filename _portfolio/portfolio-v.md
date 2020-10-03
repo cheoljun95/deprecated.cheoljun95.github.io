@@ -14,6 +14,12 @@ Visual Question Answer (VQA) is an artificial intelligence (AI) task that answer
 
 The most efficient form of data in the task of reasoning based on relationship information is a graph [4]. In the field of computer vision, this is a Scene Graph Generation (SGG) task that recognizes not only objects but also relationships between objects [6], [7], [8]. Most existing VQA models utilize the end-to-end model [10] that combines natural language processing modules with object recognition models, and the latest [1],[9], and [11] have the form of a Modular Network model based on SGGG. [1] uses the symbol as it is, while [9], [11] uses the method of learning the embedding of the symbol. <br> <br>
 
+This study uses the NS-VQA approach of [1]. In [1], the applied CLEVR dataset is a dataset with very limited types and properties of objects. Conversely, a GQA dataset is a dataset that is closer to the real-world by encompassing hundreds of types, attributes, and relationships. Also, the dataset provides a label for the Symbolic program. This study aims to apply the NS-VQA system to GQA datasets. The system is composed of the following three modules: a detector module that generates a scene graph from an image, an encoder module that extracts a symbolic program from a natural language question, and an executor module that yields the answer from the scene graph and the symbolic program. In this study, the performance of the system without end-to-end learning is reported, and the limitation of NS-VQA approach for the real-world is analyzed. <br><br>
+
+Detector Module <br><br>
+
+The detector module is an object detection model that learns end-to-end by adding a relation head to deduce the relationship between objects. First, create a ground truth label for the name, attribute, and relationship of the object within each image in the scene graph provided by the GQA dataset. In this procedure, the top 800, 600, and 200 labels were selected for each label type, and the selected data cover more than 95% of the original dataset. <br><br>
+
 
 Reference <br><br>
 
