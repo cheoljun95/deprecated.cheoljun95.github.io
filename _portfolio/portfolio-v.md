@@ -54,7 +54,23 @@ All values for "n,r,o" are binary, i.e. 0 or 1. "n" indicates when the construct
    
 The architecture of the encoder model is a Seq2seq model, as both input and output data are sequences. The model utilizes biLSTM combined with attention mechanism, followed by the method of [17]. The word embedding was initialized with GloVe [18]. The input consists of words from a natural language question and yields a sequence of symbolic instructions, and their types. <br><br>
 
+Executer Module <br><br>
 
+</p>
+   
+ <p style="text-align:center;"> <img src='/images/2020BT/figure_3.png' align='middle' width='800' height='500'> <br> <font size = "2"> Figure 3. An example of executer module process.
+ </font> <br> <br> </p>
+
+<p style="text-align:justify;">
+
+The executer module is a module that executes the aforementioned state machine. Initially, all the activations of nodes and edges are initialized to 1 and are filtered out by solving instructions. Here, the value of the state was defined conclusively ( state(i) {0,1} ). For this purpose, a threshold was set for each concept to activate or filter out nodes or edges ( match(i), symbol), match(i,j), symbol {0,1} in Algorithm 1 ). The threshold value was set as the minimum value allowing 90 % recall for each concept, which can be derived from the statistics of the detector module. If any matching label is present, the state must be activated, which is simple to implement using the max function (Algorithm 1). <br><br>
+
+</p>
+   
+ <p style="text-align:center;"> <img src='/images/2020BT/algorithm_1.png' align='middle' width=500' height='500'> <br> <font size = "2"> Algorithm 1.  Executer Algorithm.
+ </font> <br> <br> </p>
+
+<p style="text-align:justify;">
   
 Reference <br><br>
 
