@@ -26,17 +26,29 @@ Many studies have been done on converting natural words to numerical data. Simpl
 
 Building Block<br><br>
 
+
+
  Speech act classification is a type of natural language processing (NLP). Natural language is featured as time-series data, and this study utilizes RNN (Recurrent Neural Network) structures which are suitable for time series data. In particular, LSTM (Long Short-Term Memory) is used as a unit building block in this study and in previous studies ([1], [2]). LSTM is an extension of RNN by incorporating memory units and update/forget gates, which solves the existing problem of vanishing gradient facilitates learning long term dependency. Furthermore, by bi-directionally arranging LSTM (Bi-LSTM, Bidirectional LSTM), the information flows both following and reversing time sequence, achieving better understanding of back and forth contexts. Bi-LSTM is an effective model for speech act classification, as understanding contexts is important to infer speakers’ intention ([1], [2]). <br><br>
  
  </p>
    
- <p style="text-align:center;"> <img src='/images/2019BMB/figure_1.png' align='middle' width='400' height='400'> <br> <font size = "2"> Figure 1. (a) LSTM unit architecture and formula. (b) Bi-LSTM data flow.
+ <p style="text-align:center;"> <img src='/images/2019BMB/figure_1.png' align='middle' width='800' height='500'> <br> <font size = "2"> Figure 1. (a) LSTM unit architecture and formula. (b) Bi-LSTM data flow.
 . </font> <br> <br> </p>
 
 <p style="text-align:justify;">
  
  
 </p>
+
+Layer Architecture <br><br>
+
+<p style="text-align:center;"> <img src='/images/2019BMB/figure_2.png' align='middle' width='800' height='500'> <br> <font size = "2"> Figure 2. Overall architecture of speech act classification. (b) Bi-LSTM data flow.
+. </font> <br> <br> </p>
+
+
+A dialogue consists of a dual hierarchical structure; a dialogue is a sequence of utterances, and each utterance is a sequence of words. As there is a high correlation in speech acts of utterances within a dialogue, such as the high probability of “answer” after “question,” the temporal dependency between utterances is also important, not only considering the temporal dependency between words. Taking this into account, the existing models ([1], [2]) and the model suggested in this study have a two-level hierarchical structure (Figure. 2). The first level layer is Utterance feature extractor that extracts an utterance vector from the sequence of words, and the second level layer, Logit, deduces speech act categories from utterance vectors. Both Utterance feature extractor and Logit use Bi-LSTM as the core skeleton.
+
+
 
 Reference <br><br>
 
