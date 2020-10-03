@@ -39,14 +39,7 @@ Encoder Module <br><br>
 
 Encoder module functions to convert a given natural language question into a symbolic program. Before entering, I would like to explain the Symbolic program approach introduced in this study. <br><br>
 
-Neural State Machine (NSM) is an automata that yields answers with scene graphs and instructions, proposed in [9]. In this method, the activation value is endowed in each node and edge in the scene graph, and each instruction sequentially changes the activation states of the graph to produce the final answer. The instruction activates the node or edge that best matches the instruction. In the NSM, the degree of matching is calculated by the distance in the embedding space, so called a conceptual embedding. The conceptual embedding also distinguishes whether the construction is applied to nodes or to edges.<br><br>
-
-In this study, the concept of the state machine is introduced, but the activation is determined based on symbol matching without the use of embedding. <br><br>
-Before entering, I would like to explain the Symbolic program approach introduced in this study.
-
-Neural State Machine (NSM) is an automata that yields answers with scene graphs and instructions, proposed in [9]. In this method, the activation value is endowed in each node and edge in the scene graph, and each instruction sequentially changes the activation states of the graph to produce the final answer. The instruction activates the node or edge that best matches the instruction. In the NSM, the degree of matching is calculated by the distance in the embedding space, so called a conceptual embedding. The conceptual embedding also distinguishes whether the construction is applied to nodes or to edges.
-
-In this study, the concept of the state machine is introduced, but the activation is determined based on symbol matching without the use of embedding. 
+Neural State Machine (NSM) is an automata that yields answers with scene graphs and instructions, proposed in [9]. In this method, the activation value is endowed in each node and edge in the scene graph, and each instruction sequentially changes the activation states of the graph to produce the final answer. The instruction activates the node or edge that best matches the instruction. In the NSM, the degree of matching is calculated by the distance in the embedding space, so called a conceptual embedding. The conceptual embedding also distinguishes whether the construction is applied to nodes or to edges. In this study, the concept of the state machine is introduced, but the activation is determined based on symbol matching without the use of embedding. <br><br>
 
 So, it is necessary to convert the symbolic program label of existing datasets into NSM format. The existing construction consists of "Select," "Relate," "Query," "Exist," "Verify," "Choose," "Choose relation," "And," "Or," "Different," "Common," all of which, except "Select" and "Relate," indicate the requirements and types of questions in order to produce the final answer. Except for "Different," and "Common," NSM and NS-VQA are equivalent. A new simpler format is defined to make instructions more machine-interpretable ( "instruction = [n,r,o]").
 
@@ -59,7 +52,7 @@ All values for "n,r,o" are binary, i.e. 0 or 1. "n" indicates when the construct
 
 <p style="text-align:justify;">
    
-The architecture of the encoder model is a Seq2seq model, as both input and output data are sequences. The model utilizes biLSTM combined with attention mechanism, followed by the method of [17]. The word embedding was initialized with GloVe [18]. The input consists of words from a natural language question and yields a sequence of symbolic instructions, and their types.
+The architecture of the encoder model is a Seq2seq model, as both input and output data are sequences. The model utilizes biLSTM combined with attention mechanism, followed by the method of [17]. The word embedding was initialized with GloVe [18]. The input consists of words from a natural language question and yields a sequence of symbolic instructions, and their types. <br><br>
 
 
   
