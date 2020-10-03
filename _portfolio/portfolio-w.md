@@ -104,16 +104,16 @@ The pooling method using Attention Mechanism allow us to intuitively interpret t
 
 Reference <br><br>
 
-[1] Kumar, H., Agarwal, A., Dasgupta, R., Joshi, S., & Kumar, A. (2017). Dialogue Act Sequence Labeling using Hierarchical encoder with CRF. Retrieved from http://arxiv.org/abs/1709.04250 <br>
+[1] Kumar, H., Agarwal, A., Dasgupta, R., Joshi, S., & Kumar, A. (2017). Dialogue Act Sequence Labeling using Hierarchical encoder with CRF. Retrieved from http://arxiv.org/abs/1709.04250 <br><br>
 
-[2] Chen, Z., Yang, R., Zhao, Z., Cai, D., & He, X. (2018). Dialogue Act Recognition via CRF-Attentive Structured Network. The 41st International ACM SIGIR Conference on Research & Development in Information Retrieval  - SIGIR ’18, 225–234. <br>
+[2] Chen, Z., Yang, R., Zhao, Z., Cai, D., & He, X. (2018). Dialogue Act Recognition via CRF-Attentive Structured Network. The 41st International ACM SIGIR Conference on Research & Development in Information Retrieval  - SIGIR ’18, 225–234. <br><br>
 
-[3] Mikolov, T., Sutskever, I., Chen, K., Corrado, G. S., & Dean, J. (2013). Distributed representations of words and phrases and their compositionality. In Advances in neural information processing systems (pp. 3111-3119) <br>
+[3] Mikolov, T., Sutskever, I., Chen, K., Corrado, G. S., & Dean, J. (2013). Distributed representations of words and phrases and their compositionality. In Advances in neural information processing systems (pp. 3111-3119) <br><br>
 
-[4] Mackay, C. (1875). “Glove.” Notes and Queries, s5-IV(96), 346. https://doi.org/10.1093/nq/s5-IV.96.346-c <br>
+[4] Mackay, C. (1875). “Glove.” Notes and Queries, s5-IV(96), 346. https://doi.org/10.1093/nq/s5-IV.96.346-c <br><br>
 
-[5] ﻿Devlin, J., Chang, M.-W., Lee, K., & Toutanova, K. (2018). BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding. (Mlm). Retrieved from http://arxiv.org/abs/1810.04805 <br>
+[5] Devlin, J., Chang, M.-W., Lee, K., & Toutanova, K. (2018). BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding. (Mlm). Retrieved from http://arxiv.org/abs/1810.04805 <br><br>
 
 [6] Core, M. G., & Allen, J. (1997, November). Coding dialogs with the DAMSL annotation scheme. In AAAI fall symposium on communicative action in humans and machines (Vol. 56).
-[7] Luong, M. T., Pham, H., & Manning, C. D. (2015). Effective approaches to attention-based neural machine translation. arXiv preprint arXiv:1508.04025. <br>
+[7] Luong, M. T., Pham, H., & Manning, C. D. (2015). Effective approaches to attention-based neural machine translation. arXiv preprint arXiv:1508.04025. <br><br>
 
