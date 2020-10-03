@@ -9,6 +9,10 @@ collection: portfolio
 
 <font size="2"> This research project was conducted for Bachelor’s Thesis of the department of Computer Science and Engineering at Seoul National University. </font><br> 
 
+<p style="text-align:justify;">
+Visual Question Answer (VQA) is an artificial intelligence (AI) task that answers questions based on images. This is a task that can comprehensively evaluate AI's perceptual ability and reasoning ability, where AI should interpret given questions and deduce answers based on the relationship between recognized objects. In other words, the ability to understand the relationship between objects must be good first, and the second must be to understand what the questionnaire requires and what reasoning should be done. Finally, the ability to draw conclusions by aggregating visually recognized information and instructions extracted from natural language is needed. The system proposed in NS-VQA[1] consists of modules responsible for each of these three essential capabilities. <br> <br>
+
+The most efficient form of data in the task of reasoning based on relationship information is a graph [4]. In the field of computer vision, this is a Scene Graph Generation (SGG) task that recognizes not only objects but also relationships between objects [6], [7], [8]. Most existing VQA models utilize the end-to-end model [10] that combines natural language processing modules with object recognition models, and the latest [1],[9], and [11] have the form of a Modular Network model based on SGGG. [1] uses the symbol as it is, while [9], [11] uses the method of learning the embedding of the symbol. <br> <br>
 
 
 Reference <br><br>
