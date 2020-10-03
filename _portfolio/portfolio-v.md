@@ -18,11 +18,21 @@ This study uses the NS-VQA approach of [1]. In [1], the applied CLEVR dataset is
 
 Detector Module <br><br>
 
+</p>
+   
+ <p style="text-align:center;"> <img src='/images/2020BT/figure_1.png' align='middle' width='800' height='500'> <br> <font size = "2"> Figure 1. Detector module pipeline.
+ </font> <br> <br> </p>
+
+<p style="text-align:justify;">
+
 The detector module is an object detection model that learns end-to-end by adding a relation head to deduce the relationship between objects. First, create a ground truth label for the name, attribute, and relationship of the object within each image in the scene graph provided by the GQA dataset. In this procedure, the top 800, 600, and 200 labels were selected for each label type, and the selected data cover more than 95% of the original dataset. <br><br>
 
 Due to the large number of labels,  the model utilizes the hierarchical Softmax. This method is from [12], in which the label is reconstructed into a tree structure of higher and lower concepts, and then individual Softmax is applied to the lower concepts of the same higher concepts. WordNet [14] is used to obtain a directed graph of the relationship between the parent and the child. By setting the first root as 'physical identity', leaving only the shortest-distance node from each label to the root, a tree-shaped hierarchy can be derived. In this case, 64 newly generated intermediate nodes are added to the label so that Softmax is applied for each level of the hierarchy. Inference consists of multiplying the probability of the higher concept up to the root according to the principle of conditional probability. This allowed performance (mAP) to be improved from 0.17 to 0.19/ <br> <br>
 
 In the case of attributes, it is divided into non-exclusive (e.g., color & shape) and exclusive (e.g., red & blue). The "Query - " in the question data provided from the GQA dataset was used. For example, "Query color ..." The following answers (e.g. "red", "blue") are regarded as lower concepts of the querying attribute (e.g. color). <br><br>
+
+For the object detection model, ResNet was used as the backbone of the Faster-RCNN [13] model. In addition to the object detection head, the attribute head is introduced to infer not only the class of the object but also its properties. <br><br>
+Encoder Module <br><br>
 
 For inferring relations in the form of a graph, the Neural Motif [7] method was introduced. In the method, the relationships of objects are inferred considering the given context. In this study, Transformer [15] was used as a module to calculate the context of the image. Due to the fact that the number of labels is 200, which is four times higher than [7], but has less data, this study adopted the predicate classification paradigm where the model learns to infer relations (predicates) from the ground truth boxes and labels. <br><br>
 
@@ -33,16 +43,6 @@ Encoder module functions to convert a given natural language question into a sym
 Neural State Machine (NSM) is an automata that yields answers with scene graphs and instructions, proposed in [9]. In this method, the activation value is endowed in each node and edge in the scene graph, and each instruction sequentially changes the activation states of the graph to produce the final answer. The instruction activates the node or edge that best matches the instruction. In the NSM, the degree of matching is calculated by the distance in the embedding space, so called a conceptual embedding. The conceptual embedding also distinguishes whether the construction is applied to nodes or to edges.<br><br>
 
 In this study, the concept of the state machine is introduced, but the activation is determined based on symbol matching without the use of embedding. <br><br>
-
-</p>
-   
- <p style="text-align:center;"> <img src='/images/2020BT/figure_1.png' align='middle' width='800' height='500'> <br> <font size = "2"> Figure 1. Detector module pipeline.
- </font> <br> <br> </p>
-
-<p style="text-align:justify;">
- 
-For the object detection model, ResNet was used as the backbone of the Faster-RCNN [13] model. In addition to the object detection head, the attribute head is introduced to infer not only the class of the object but also its properties. <br><br>
-
 Before entering, I would like to explain the Symbolic program approach introduced in this study.
 
 Neural State Machine (NSM) is an automata that yields answers with scene graphs and instructions, proposed in [9]. In this method, the activation value is endowed in each node and edge in the scene graph, and each instruction sequentially changes the activation states of the graph to produce the final answer. The instruction activates the node or edge that best matches the instruction. In the NSM, the degree of matching is calculated by the distance in the embedding space, so called a conceptual embedding. The conceptual embedding also distinguishes whether the construction is applied to nodes or to edges.
