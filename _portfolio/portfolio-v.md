@@ -94,7 +94,7 @@ The results of fitting the encoder module are as follows. In contrast to the det
 
 </p>
    
- <p style="text-align:center;"> <img src='/images/2020BT/table_2.png' align='middle' width='300'> <br> <font size = "2"> Table 2. Encoder module fitting results. 
+ <p style="text-align:center;"> <img src='/images/2020BT/table_2.png' align='middle' width='280'> <br> <font size = "2"> Table 2. Encoder module fitting results. 
  </font> <br> <br> </p>
 
 <p style="text-align:justify;">
@@ -103,7 +103,7 @@ Finally, the results are as in Table 3. The results of this study were marked NS
 
 </p>
    
- <p style="text-align:center;"> <img src='/images/2020BT/table_3.png' align='middle' width='300'> <br> <font size = "2"> Table 3. Performance of the proposed system and models from previous studies.
+ <p style="text-align:center;"> <img src='/images/2020BT/table_3.png' align='middle' width='400'> <br> <font size = "2"> Table 3. Performance of the proposed system and models from previous studies.
  </font> <br> <br> </p>
 
 <p style="text-align:justify;">
