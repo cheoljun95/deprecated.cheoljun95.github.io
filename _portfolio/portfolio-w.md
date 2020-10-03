@@ -83,7 +83,7 @@ The effect of the different structures of Attention Module, FC or Bi-LSTM, is no
 
 Qualitative Analysis of Attention <br> <br>
 
-<p style="text-align:center;"> <img src='/images/2019BMB/figure_6.png' align='middle' width='800' height='700'> <br> <font size = "2"> Figure 5. Qualitative analysis of attention weights. </font> <br> <br> </p>
+<p style="text-align:center;"> <img src='/images/2019BMB/figure_6.png' align='middle' width='600' height='400'> <br> <font size = "2"> Figure 5. Qualitative analysis of attention weights. </font> <br> <br> </p>
 <p style="text-align:justify;">
 
 One of the benefits of using Attention Mechanism is that it is easy to intuitively show how the model works. In this study, attention weights are extracted from Attention Module for qualitative analysis. The attention weights near the subject words in utterance tend to have higher values, meaning that the information of those parts significantly affects the classification.<br> <br>
