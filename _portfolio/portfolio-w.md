@@ -14,7 +14,7 @@ Speech act (or Dialogue act) means a role of each utterance within a dialogue, s
   
   <img src='/images/2019BMB/table_1.png' align='middle' width='300' height='200'> <br>
   
- <p style="text-align:middle;"> Table 1. Examples of speech act classification. <br> <br>
+ <p style="text-align:middle;"> Table 1. Examples of speech act classification. Retrieved from [2]. <br> <br>
 
 This study aims to implement automatic speech act classifier by utilizing deep learning model based on the 2-layer RNN structure (Figure.2) used by existing models (Kumar et al [1], Chen et al [2]). In addition, Attention Mechanism [7] is applied to the pooling method, which was not focused in previous studies, and compared with existing methods. <br><br>
 
