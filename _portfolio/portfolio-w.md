@@ -41,9 +41,8 @@ Building Block<br><br>
 
 Layer Architecture <br><br>
 
-<p style="text-align:center;"> <img src='/images/2019BMB/figure_2.png' align='middle' width='800' height='500'> <br> <font size = "2"> Figure 2. Overall architecture of speech act classification. (b) Bi-LSTM data flow.
-. </font> <br> <br> </p>
-
+<p style="text-align:center;"> <img src='/images/2019BMB/figure_2.png' align='middle' width='800' height='500'> <br> <font size = "2"> Figure 2. Overall architecture of speech act classification. </font> <br> <br> </p>
+<p style="text-align:justify;">
 
 A dialogue consists of a dual hierarchical structure; a dialogue is a sequence of utterances, and each utterance is a sequence of words. As there is a high correlation in speech acts of utterances within a dialogue, such as the high probability of “answer” after “question,” the temporal dependency between utterances is also important, not only considering the temporal dependency between words. Taking this into account, the existing models ([1], [2]) and the model suggested in this study have a two-level hierarchical structure (Figure. 2). The first level layer is Utterance feature extractor that extracts an utterance vector from the sequence of words, and the second level layer, Logit, deduces speech act categories from utterance vectors. Both Utterance feature extractor and Logit use Bi-LSTM as the core skeleton. <br><br>
 
@@ -51,9 +50,16 @@ Utterance feature extractor consists of Embedding layer, Bi-LSTM and Pooling lay
 
 Logit (Fig.3-(a)) has a relatively simple structure. The utterance vectors are processed through Bi-LSTM, and the probability of each speech act category is obtained by applying Softmax to the output hidden states of Bi-LSTM. Before the utterance vectors entering Bi-LSTM, the additional informative data are augmented: a flag identifying speakers, and a flag for indicating whether the utterance ends with a question mark. <br><br>
 
-<p style="text-align:center;"> <img src='/images/2019BMB/figure_3.png' align='middle' width='1000' height='2000'> <br> <font size = "2"> Figure 3. Architecture of utterance feature extractor (b) and logit (a). (b) Bi-LSTM data flow.
-. </font> <br> <br> </p>
+<p style="text-align:center;"> <img src='/images/2019BMB/figure_3.png' align='middle' width='1000' height='2000'> <br> <font size = "2"> Figure 3. Architecture of utterance feature extractor (b) and logit (a).</font> <br> <br> </p>
+<p style="text-align:justify;">
+ 
+Pooling method
 
+<p style="text-align:center;"> <img src='/images/2019BMB/figure_4.png' align='middle' width='1000' height='2000'> <br> <font size = "2"> Figure 4. Diagram of each pooling method. (a) attention pooling, (b) average pooling, (c) last pooling. </font> <br> <br> </p>
+<p style="text-align:justify;">
+ 
+
+This study proposes Attention pooling, as a novel pooling method utilizing Attention Mechanism, and compares with the existing method, Average pooling [1]. Pooling is the aggregation of a column of hidden state vectors produced by Bi-LSTM to obtain a single unit of utterance vector. Average pooling (Fig.4-(b)) is the method of averaging the hidden state vectors, and Last pooling (Fig.4-(c) is the method of using the last hidden state. Attention pooling (Fig.4-(a) proposed in this study is a method of weighting the hidden state vectors by calculating the attention weight through the Attention module. As a result, the Attention module is trained to yield attention weights in accordance with relevant significance of the given pieces. FC (Fullly Connected) network and Bi-LSTM are tested as candidate structures for the Attention Module. <br> <br>
 
 
 
