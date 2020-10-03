@@ -1,6 +1,6 @@
 ---
 title: "Interactive Robotic Vacuum"
-excerpt: "SNU Creative Design Fair <br/><img src='/images/InteractiveRobot.png' align='middle' width='700' height='500'>"
+excerpt: "SNU Creative Design Fair   2020 Fall<br/><img src='/images/InteractiveRobot.png' align='middle' width='700' height='500'>"
 collection: portfolio
 ---
 <br><br>
