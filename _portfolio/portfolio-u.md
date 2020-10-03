@@ -6,4 +6,4 @@ collection: portfolio
 
 <img src='/images/HBA_modeling.png' align='middle' width='1000' height='800'>
 
-This project was conducted as the final project for 2020 Spring Seminar in Experimental Psychology: Computational Modeling at Seoul National University. There are details at the link below. 
+This project was conducted as the final project for 2020 Spring Seminar in Experimental Psychology: Computational Modeling at Seoul National University. There are details at the <a href="https://cheoljun95.github.io/files/computational_modelig_final.pdf">link</a>. 
