@@ -1,6 +1,6 @@
 ---
 title: "NS-VQA: application to real world data and its limitation"
-excerpt: "Bachelor’s Thesis, SNU<br/><img src='/images/NS-GQA_2.png' align='middle' width='700' height='500'>"
+excerpt: "Bachelor’s Thesis, SNU - 2020 Spring<br/><img src='/images/NS-GQA_2.png' align='middle' width='700' height='500'>"
 collection: portfolio
 ---
 <br><br>
