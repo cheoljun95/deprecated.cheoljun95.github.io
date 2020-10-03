@@ -70,7 +70,7 @@ The executer module is a module that executes the aforementioned state machine. 
 
 </p>
    
- <p style="text-align:center;"> <img src='/images/2020BT/algorithm_1.png' align='middle' width='800' height='500'> <br> <font size = "2"> Figure 3. An example of executer module process.
+ <p style="text-align:center;"> <img src='/images/2020BT/algorithm_1.png' align='middle' width='800' height='500'> <br> <font size = "2"> Algorithm 1. Executer Algorithm.
  </font> <br> <br> </p>
 
 <p style="text-align:justify;">
@@ -84,19 +84,38 @@ First, the results of the Detector module are as follows.  The mAP metric is cal
 
 </p>
    
- <p style="text-align:center;"> <img src='/images/2020BT/table_1.png' align='middle' width='400'> <br> <font size = "2"> Table 1. Detector module fitting results. 
+ <p style="text-align:center;"> <img src='/images/2020BT/table_1.png' align='middle' width='300'> <br> <font size = "2"> Table 1. Detector module fitting results. 
  </font> <br> <br> </p>
 
 <p style="text-align:justify;">
    
 The results of fitting the encoder module are as follows. In contrast to the detector module, the performance is fine enough. This seems to be due to the fact that the question data is more than the photo data and that the question structure has a relatively simple pattern. The performance degradation factor of the Encoder module is mainly inferring symbol.<br><br>
 
+
 </p>
    
- <p style="text-align:center;"> <img src='/images/2020BT/table_2.png' align='middle' width='400'> <br> <font size = "2"> Table 2. Encoder module fitting results. 
+ <p style="text-align:center;"> <img src='/images/2020BT/table_2.png' align='middle' width='300'> <br> <font size = "2"> Table 2. Encoder module fitting results. 
  </font> <br> <br> </p>
 
 <p style="text-align:justify;">
+ 
+Finally, the results are as in Table 3. The results of this study were marked NS-VQA and NS-VQA (oracle) was the result of the use of the correct scan graph. 
+
+</p>
+   
+ <p style="text-align:center;"> <img src='/images/2020BT/table_3.png' align='middle' width='300'> <br> <font size = "2"> Table 3. Performance of the proposed system and models from previous studies.
+ </font> <br> <br> </p>
+
+<p style="text-align:justify;">
+   
+The final results in Table 3 show that NS-VQA's performance is significantly lower than that of previous studies. I would like to discuss the cause of this. The biggest cause is the degradation of performance due to the limits of the detector module. The results from Table 1 earlier show that the performance learned is not so good, as shown by the performance differences between NS-VQA and NS-VQA (oracle) in Table 3. <br><br>
+
+The low performance of the Detector module is due to the fact that the types of labels assumed by the GQA are very numerous and complex. Compared to MS COCO, which is a performance indicator of existing object recognition models, the number of labels is also significantly insufficient. In addition, labels are not meaningfully independent, and interrelated labels interact as distractors, significantly reducing model performance [12]. The scene graph label of the dataset is only partially labeled and the distribution is also highly biased [7], [8]. Incomplete labeling also resulted in poor performance of NS-VQA (oracle). In [1], the reason why NS-VQA could be successful with respect to CLEVR is also because CLEVR has a very limited label structure. <br><br>
+
+The preceding analysis suggests that the NS-VQA system is not scalable for the label structure. Embedding can be introduced as a solution to mitigate this non-scalability. It is calculated from the distance between the embedding by projecting whether or not the Symbol matches into the embedding space.[9],[11]. In addition, the application of end-to-end or joint training methods is indispensable to introduce such embedding. In this study, a fundamental number is needed to apply the end-to-end or point-training learning structure because it is designed for the purpose of viewing the performance limits when each is learned in the absence of an end-to-end. In [1], [9], which is applied with a deuterical exit, reinforcement learning method was used for point training. In [11], encoder module and exit module are taught end-to-end. <br><br>
+
+Finally, the introduction of advanced embedding also mitigates the degradation of the detector module and is not a fundamental solution. This is a more fundamental problem because it is difficult to implement a complete cognitive model with simple visual or natural language data alone. The vision model, such as object recognition or SGG, is simply a statistical model of the distribution of given visual data and the extracted visual representation, not a model of the world that is actually formed within a human brain. These problems mean that there is a performance cap for VQA tasks. <br><br>
+    
    
 Reference <br><br>
 
