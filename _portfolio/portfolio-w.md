@@ -6,16 +6,17 @@ collection: portfolio
 
 <br><br>
 
-<img src='/images/SAR_2.png' align='middle' width='1000' height='700'>
+<img src='/images/SAR_2.png' align='center' width='1000' height='700'>
 
 
 <p style="text-align:justify;">
 Speech act (or Dialogue act) means a role of each utterance within a dialogue, such as command, question, or acknowledgement. Speech act focuses on “what language does” and analyzing one’s speech act can infer the speaker's intention and status. As understanding speakers’ intention and status is critical for a human-like conversation, the automatic speech act recognition has a great potential to improve automatic dialogue application, such as a chatbot. <br><br> </p>
  
    
- <p style="text-align:middle;"> 
-  <img src='/images/2019BMB/table_1.png' align='middle' width='400' height='400'> <br>
-Table 1. Examples of speech act classification. Retrieved from [2]. <br> <br> </p>
+ 
+  <img src='/images/2019BMB/table_1.png' align='center' width='400' height='400'> <br>
+   
+ <p style="text-align:center;" font size="5"> Table 1. Examples of speech act classification. Retrieved from [2]. <br> <br> </p>
  
  
 <p style="text-align:justify;">
