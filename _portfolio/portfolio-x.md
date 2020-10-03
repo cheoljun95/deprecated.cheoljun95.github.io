@@ -20,12 +20,7 @@ The control system was implemented on an Arduino board and a RPLiDAR was used fo
 The lack of interaction with robots is one of the major sources of users' low confidence in robots. Our team devised a novel HRI platform where users can interact with the robot by hand gestures. As the core of the platform, a smart phone application detects user's hand gesture and send commands to the robot according to the detected gesture. The hand gesture detector was implemented using MediaPipe, an open source package developed by Google. We also utilized the pretrained hand tracking model provided from the package developers. As a proof of concept, we implemented an application which moves the robot to be aligned with users hands position. This allows users to control the robot with their hands, and clean the floor with sweeping gesture. <br><br>
 
 
-
-
-
 </p>
 
+<img src='/images/demo.gif' align='middle' width='1000' height='700'>
 
-Reference <br><br>
-
-[1] 
