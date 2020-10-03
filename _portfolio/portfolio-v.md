@@ -94,7 +94,7 @@ The results of fitting the encoder module are as follows. In contrast to the det
 
 </p>
    
- <p style="text-align:center;"> <img src='/images/2020BT/table_2.png' align='middle' width='280'> <br> <font size = "2"> Table 2. Encoder module fitting results. 
+ <p style="text-align:center;"> <img src='/images/2020BT/table_2.png' align='middle' width='240'> <br> <font size = "2"> Table 2. Encoder module fitting results. 
  </font> <br> <br> </p>
 
 <p style="text-align:justify;">
