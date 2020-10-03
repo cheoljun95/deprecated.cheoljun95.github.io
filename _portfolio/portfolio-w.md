@@ -14,7 +14,7 @@ Speech act (or Dialogue act) means a role of each utterance within a dialogue, s
  
 
    
- <p style="text-align:center;"> <img src='/images/2019BMB/table_1.png' align='center' width='400' height='400'> <br> <font size = "2"> Table 1. Examples of speech act classification. Retrieved from [2]. </font> <br> <br> </p>
+ <p style="text-align:center;"> <img src='/images/2019BMB/table_1.png' align='middle' width='400' height='400'> <br> <font size = "2"> Table 1. Examples of speech act classification. Retrieved from [2]. </font> <br> <br> </p>
  
  
 <p style="text-align:justify;">
