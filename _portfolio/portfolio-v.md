@@ -119,7 +119,7 @@ The preceding analysis suggests that the NS-VQA system is not scalable for the c
 Finally, the introduction of the aforementioned embedding also mitigates the degradation of the detector module but is not a fundamental solution. It is difficult to implement a complete cognitive model with simple visual or natural language data alone. The vision model, such as object recognition or SGG, is simply a statistical model of the distribution of given visual data and the extracted visual representation, not a model of the world that is actually formed within a human brain. This essential problem means that there is an innate performance limit for VQA tasks. <br><br>
     
    
-Reference <br><br>
+<br><br> Reference <br><br>
 
 [1] Yi, K., Torralba, A., Wu, J., Kohli, P., Gan, C., and Tenenbaum, J. B. (2018). Neural-symbolic VQA: Disentangling reasoning from vision and language understanding. Advances in Neural Information Processing Systems (NeurIPS), 1031–1042, 2018.<br><br>
 
