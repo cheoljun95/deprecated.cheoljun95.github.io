@@ -4,11 +4,13 @@ excerpt: "2020 Fall Brain-Mind-Behavior Independent Research Course, SNU <br/><b
 collection: portfolio
 ---
 
+
+
 <br><br>
 
-<img src='/images/SAR_2.png' class="center" width='1000' height='700'>
+<img src='/images/SAR_2.png' class="center" width='1000' height='700'> <br>
 
-<font size="3"> This research project was conducted for 2019 Fall Brain-Mind-Behavior independent research course in Seoul National University. It was an extension of work in the summer internship at KIXLab, KAIST. I won the best research award from 2019 Fall Brain-Mind-Behavior independent research presentation. </font><br> <br>
+<font size="2"> This research project was conducted for 2019 Fall Brain-Mind-Behavior independent research course in Seoul National University. It was an extension of work in the summer internship at KIXLab, KAIST. I won the best research award from 2019 Fall Brain-Mind-Behavior independent research presentation. </font><br> 
 
 <p style="text-align:justify;">
 Speech act (or Dialogue act) means a role of each utterance within a dialogue, such as command, question, or acknowledgement. Speech act focuses on “what language does” and analyzing one’s speech act can infer the speaker's intention and status. As understanding speakers’ intention and status is critical for a human-like conversation, the automatic speech act recognition has a great potential to improve automatic dialogue application, such as a chatbot. <br><br> 
