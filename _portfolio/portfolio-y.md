@@ -1,6 +1,6 @@
 ---
 title: "Plant Disease Detecting Web Service"
-excerpt: "Creative Integrated Design Course, SNU<br/><br/><img src='/images/Farmhannong.png' align='middle' width='700' height='500'>"
+excerpt: "Creative Integrated Design Course - 2018 Fall, SNU<br/><br/><img src='/images/Farmhannong.png' align='middle' width='700' height='500'>"
 collection: portfolio
 ---
 
