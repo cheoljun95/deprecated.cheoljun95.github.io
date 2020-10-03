@@ -32,7 +32,6 @@ Due to the large number of labels,  the model utilizes the hierarchical Softmax.
 In the case of attributes, it is divided into non-exclusive (e.g., color & shape) and exclusive (e.g., red & blue). The "Query - " in the question data provided from the GQA dataset was used. For example, "Query color ..." The following answers (e.g. "red", "blue") are regarded as lower concepts of the querying attribute (e.g. color). <br><br>
 
 For the object detection model, ResNet was used as the backbone of the Faster-RCNN [13] model. In addition to the object detection head, the attribute head is introduced to infer not only the class of the object but also its properties. <br><br>
-Encoder Module <br><br>
 
 For inferring relations in the form of a graph, the Neural Motif [7] method was introduced. In the method, the relationships of objects are inferred considering the given context. In this study, Transformer [15] was used as a module to calculate the context of the image. Due to the fact that the number of labels is 200, which is four times higher than [7], but has less data, this study adopted the predicate classification paradigm where the model learns to infer relations (predicates) from the ground truth boxes and labels. <br><br>
 
@@ -51,7 +50,17 @@ In this study, the concept of the state machine is introduced, but the activatio
 
 So, it is necessary to convert the symbolic program label of existing datasets into NSM format. The existing construction consists of "Select," "Relate," "Query," "Exist," "Verify," "Choose," "Choose relation," "And," "Or," "Different," "Common," all of which, except "Select" and "Relate," indicate the requirements and types of questions in order to produce the final answer. Except for "Different," and "Common," NSM and NS-VQA are equivalent. A new simpler format is defined to make instructions more machine-interpretable ( "instruction = [n,r,o]").
 
-All values for "n,r,o" are binary, i.e. 0 or 1. "n" indicates when the construction wants to find an object that does not correspond to the concept (e.g. "Select (not) black"). "r" indicates whether the instruction is applied to the edge. "o" indicates whether the direction of the edge meant by "r" instruction. And to make the system simple, it does not cover "Different" and "Common" queries. The dataset for the encoder module could eventually include approximately 94% of existing questions.
+All values for "n,r,o" are binary, i.e. 0 or 1. "n" indicates when the construction wants to find an object that does not correspond to the concept (e.g. "Select (not) black"). "r" indicates whether the instruction is applied to the edge. "o" indicates whether the direction of the edge meant by "r" instruction. And to make the system simple, it does not cover "Different" and "Common" queries. The dataset for the encoder module could eventually include approximately 94% of existing questions. <br><br>
+
+</p>
+   
+ <p style="text-align:center;"> <img src='/images/2020BT/figure_2.png' align='middle' width='800' height='500'> <br> <font size = "2"> Figure 2. Encoder module pipeline.
+ </font> <br> <br> </p>
+
+<p style="text-align:justify;">
+   
+The architecture of the encoder model is a Seq2seq model, as both input and output data are sequences. The model utilizes biLSTM combined with attention mechanism, followed by the method of [17]. The word embedding was initialized with GloVe [18]. The input consists of words from a natural language question and yields a sequence of symbolic instructions, and their types.
+
 
   
 Reference <br><br>
