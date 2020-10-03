@@ -10,18 +10,32 @@ collection: portfolio
 
 
 <p style="text-align:justify;">
-Speech act (or Dialogue act) means a role of each utterance within a dialogue, such as command, question, or acknowledgement. Speech act focuses on “what language does” and analyzing one’s speech act can infer the speaker's intention and status. As understanding speakers’ intention and status is critical for a human-like conversation, the automatic speech act recognition has a great potential to improve automatic dialogue application, such as a chatbot. <br><br> </p>
+Speech act (or Dialogue act) means a role of each utterance within a dialogue, such as command, question, or acknowledgement. Speech act focuses on “what language does” and analyzing one’s speech act can infer the speaker's intention and status. As understanding speakers’ intention and status is critical for a human-like conversation, the automatic speech act recognition has a great potential to improve automatic dialogue application, such as a chatbot. <br><br> 
  
 
+</p>
    
  <p style="text-align:center;"> <img src='/images/2019BMB/table_1.png' align='middle' width='400' height='400'> <br> <font size = "2"> Table 1. Examples of speech act classification. Retrieved from [2]. </font> <br> <br> </p>
- 
- 
+
 <p style="text-align:justify;">
+
+
 This study aims to implement automatic speech act classifier by utilizing deep learning model based on the 2-layer RNN structure (Figure.2) used by existing models (Kumar et al [1], Chen et al [2]). In addition, Attention Mechanism [7] is applied to the pooling method, which was not focused in previous studies, and compared with existing methods. <br><br>
 
 Many studies have been done on converting natural words to numerical data. Simply encoding words in one-hot vector is not only inefficient, it cannot represent the relationship between words. To solve this problem, there have been many attempts to find a vector space, so called an embedding space, that well represents the relationship of words. In addition to word2vec [3] and GloVe [4], efforts have been made to obtain good word vectors until BERT [5], which has recently revolutionized the field of natural language processing. However, relatively little research has been done to obtain the vector of sentence units. In many cases, simple methods are used to obtain sentence vectors, such as averaging vectors of words in the sentence, or taking only the last output when gone through an RNN structure. Taking this into account, this study seeks to obtain sentence (or utterance) vectors that better represent the meaning of sentences through a novel pooling method. <br><br>
 
+Building Block<br><br>
+
+ Speech act classification is a type of natural language processing (NLP). Natural language is featured as time-series data, and this study utilizes RNN (Recurrent Neural Network) structures which are suitable for time series data. In particular, LSTM (Long Short-Term Memory) is used as a unit building block in this study and in previous studies ([1], [2]). LSTM is an extension of RNN by incorporating memory units and update/forget gates, which solves the existing problem of vanishing gradient facilitates learning long term dependency. Furthermore, by bi-directionally arranging LSTM (Bi-LSTM, Bidirectional LSTM), the information flows both following and reversing time sequence, achieving better understanding of back and forth contexts. Bi-LSTM is an effective model for speech act classification, as understanding contexts is important to infer speakers’ intention ([1], [2]). <br><br>
+ 
+ </p>
+   
+ <p style="text-align:center;"> <img src='/images/2019BMB/figure_1.png' align='middle' width='400' height='400'> <br> <font size = "2"> Figure 1. (a) LSTM unit architecture and formula. (b) Bi-LSTM data flow.
+. </font> <br> <br> </p>
+
+<p style="text-align:justify;">
+ 
+ 
 </p>
 
 Reference <br><br>
