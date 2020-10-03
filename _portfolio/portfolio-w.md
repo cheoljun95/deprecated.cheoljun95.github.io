@@ -11,10 +11,13 @@ collection: portfolio
 
 <p style="text-align:justify;">
 Speech act (or Dialogue act) means a role of each utterance within a dialogue, such as command, question, or acknowledgement. Speech act focuses on “what language does” and analyzing one’s speech act can infer the speaker's intention and status. As understanding speakers’ intention and status is critical for a human-like conversation, the automatic speech act recognition has a great potential to improve automatic dialogue application, such as a chatbot. <br><br> </p>
-  
+ 
+   
+ <p style="text-align:middle;"> 
   <img src='/images/2019BMB/table_1.png' align='middle' width='400' height='400'> <br>
-  
- <p style="text-align:middle;"> Table 1. Examples of speech act classification. Retrieved from [2]. <br> <br> </p>
+Table 1. Examples of speech act classification. Retrieved from [2]. <br> <br> </p>
+ 
+ 
 <p style="text-align:justify;">
 This study aims to implement automatic speech act classifier by utilizing deep learning model based on the 2-layer RNN structure (Figure.2) used by existing models (Kumar et al [1], Chen et al [2]). In addition, Attention Mechanism [7] is applied to the pooling method, which was not focused in previous studies, and compared with existing methods. <br><br>
 
