@@ -54,7 +54,7 @@ All values for "n,r,o" are binary, i.e. 0 or 1. "n" indicates when the construct
 
 <p style="text-align:justify;">
    
-The architecture of the encoder model is a Seq2seq model, as both input and output data are sequences. The model utilizes biLSTM combined with attention mechanism, followed by the method of [17]. The word embedding was initialized with GloVe [18]. The input consists of words from a natural language question and yields a sequence of symbolic instructions, and their types. <br><br>
+The architecture of the encoder model is a Seq2seq model, as both input and output data are sequences. The model utilizes biLSTM combined with attention mechanism, followed by the method of [17]. The word embedding was initialized with GloVe [18]. The input consists of words from a natural language question and yields a sequence of symbols, instructions, and their types. <br><br>
 
 Executer Module <br><br>
 
@@ -84,11 +84,20 @@ First, the results of the Detector module are as follows.  The mAP metric is cal
 
 </p>
    
- <p style="text-align:center;"> <img src='/images/2020BT/table_1.png' align='middle' width='200' height='200'> <br> <font size = "2"> Table 1. Detector module fitting results. 
+ <p style="text-align:center;"> <img src='/images/2020BT/table_1.png' align='middle' width='400'> <br> <font size = "2"> Table 1. Detector module fitting results. 
  </font> <br> <br> </p>
 
 <p style="text-align:justify;">
+   
+The results of fitting the encoder module are as follows. In contrast to the detector module, the performance is fine enough. This seems to be due to the fact that the question data is more than the photo data and that the question structure has a relatively simple pattern. The performance degradation factor of the Encoder module is mainly inferring symbol.<br><br>
 
+</p>
+   
+ <p style="text-align:center;"> <img src='/images/2020BT/table_2.png' align='middle' width='400'> <br> <font size = "2"> Table 2. Encoder module fitting results. 
+ </font> <br> <br> </p>
+
+<p style="text-align:justify;">
+   
 Reference <br><br>
 
 [1] Yi, K., Torralba, A., Wu, J., Kohli, P., Gan, C., and Tenenbaum, J. B. (2018). Neural-symbolic VQA: Disentangling reasoning from vision and language understanding. Advances in Neural Information Processing Systems (NeurIPS), 1031–1042, 2018.<br><br>
