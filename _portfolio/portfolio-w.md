@@ -28,7 +28,7 @@ This study aims to implement automatic speech act classifier by utilizing deep l
 Many studies have been done on converting natural words to numerical data. Simply encoding words in one-hot vector is not only inefficient, it cannot represent the relationship between words. To solve this problem, there have been many attempts to find a vector space, so called an embedding space, that well represents the relationship of words. In addition to word2vec [3] and GloVe [4], efforts have been made to obtain good word vectors until BERT [5], which has recently revolutionized the field of natural language processing. However, relatively little research has been done to obtain the vector of sentence units. In many cases, simple methods are used to obtain sentence vectors, such as averaging vectors of words in the sentence, or taking only the last output when gone through an RNN structure. Taking this into account, this study seeks to obtain sentence (or utterance) vectors that better represent the meaning of sentences through a novel pooling method. <br><br>
 
 
-<font size="6"> Method  </font><br> <br>
+<font size="4"> Method  </font><br> <br>
 
 Building Block<br><br>
 
@@ -73,7 +73,7 @@ SwDA (Switch Board Dialogue Act Corpus, 2000) dataset is used to test the perfor
 
 Adam optimizer is used and the initial learning rate is set to 0.01. After 100 epochs, the learning rate is lowered to 0.0001 for fine tuning. The dimension size for hidden states in all Bi-LSTM is 128, the batch size is 128, and the dropout rate is 0.2. The dimension of Attention Module is 16. Embedding layer utilizes the pretrained model (Glove [4]) without extra learning. The word length for each utterance is fixed to 36 with zero-padding. For training, 8 pieces of consecutive utterance are used as input, and the entire conversation for evaluation to calculate the accuracy. It was implemented in Python 3.6 using Pytorch 1.10 and trained using NVIDIA Titan X GPU (12GB). <br> <br>
 
-<font size="6"> Results  </font><br> <br>
+<font size="4"> Results  </font><br> <br>
 
 Comparison of Pooling Methods <br> <br>
 
