@@ -1,6 +1,6 @@
 ---
 title: "BiLSTM with Attention Pooling for Dialogue Act Recognition"
-excerpt: "2020 Fall Brain-Mind-Behavior Independent Research Course, SNU <br/><br/><img src='/images/SAR_2.png' align='middle' width='700' height='500'>"
+excerpt: "Brain-Mind-Behavior Independent Research Course, SNU - 2020 Fall<br/><br/><img src='/images/SAR_2.png' align='middle' width='700' height='500'>"
 collection: portfolio
 ---
 
