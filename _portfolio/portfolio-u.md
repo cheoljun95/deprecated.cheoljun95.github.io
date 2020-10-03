@@ -1,5 +1,5 @@
 ---
-title: "Prospect Theory + Drift Diffusion Model + Multi-modal : explaination for reaction time of risky choice"
+title: "Prospect Theory + Drift Diffusion Model + Multi-modal data : Modeling reaction time of risky choice"
 excerpt: "Final project for Seminar in Experimental Psychology: Computational Modeling, SNU - 2020 Spring<br/><br/><img src='/images/HBA_modeling.png' align='middle' width='700' height='500'>"
 collection: portfolio
 ---
