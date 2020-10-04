@@ -9,7 +9,9 @@ redirect_from:
 ---
 
 # About me 
-<p style='text-align: justify;'>Hi, I am a full-time research assistant at Computational Clinical Science Lab., Seoul National University (SNU). I am also a visiting research intern at the Center for Neuroscience, Brain Science Institute, Korea Institute of Science and Technology (KIST). I graduated from the Department of Computer Science and Engineering at SNU. My interest lies in artificial intelligence, cognitive neuroscience, and computational neuroscience. My goal is to reveal how the human mind emerges from the brain and to investigate how we can artificially build the human mind. To this end, I am eager to combine knowledge from cognitive science and neuroscience and technologies from computer science.  </p>
+<p style='text-align: justify;'><br><br> 
+  
+Hi, I am a full-time research assistant at Computational Clinical Science Lab., Seoul National University (SNU). I am also a visiting research intern at the Center for Neuroscience, Brain Science Institute, Korea Institute of Science and Technology (KIST). My interest lies in artificial intelligence, cognitive neuroscience, and computational neuroscience. My goal is to reveal how the human mind emerges from the brain and to investigate how we can artificially build the human mind. To this end, I am eager to combine knowledge from cognitive science and neuroscience and technologies from computer science.  I graduated from the Department of Computer Science and Engineering at SNU with the valedictorian honor, and while I am an undergraduate student, I have participated in various range of projects including computer vision, natural language processing, robotics and computational modeling in cognitive science. Please refer to [my Past Projects](https://cheoljun95.github.io/portfolio/).</p>
 
 
 <br> <br>
@@ -22,7 +24,7 @@ Research Interest
 - **Computational basis of Intelligence** 
 <br>
 
-[Learn more](https://anaaack.github.io/research_interest/)
+[Learn more](https://cheoljun95.github.io/research_interest/)
 
 <br> <br>
 
