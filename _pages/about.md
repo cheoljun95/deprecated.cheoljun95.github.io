@@ -34,7 +34,6 @@ Research Interest
 
 Experience
 ======
-<br> 
 
 - *Research Intern;* JeeLab, Center for Neuroscience, Brain Science Institute, KIST, Seoul, Korea (Jul 2020 - Present)
 - *Research Assistant;* Computational Clinical Science Laboratory, SNU, Seoul, Korea (Jul 2020 - Present)
