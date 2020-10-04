@@ -10,7 +10,15 @@ collection: portfolio
 
 <img src='/images/SAR_2.png' class="center" width='1000' height='700'> <br>
 
-<font size="2"> This research project was conducted for 2019 Fall Brain-Mind-Behavior independent research course in Seoul National University. It was an extension of work in the summer internship at KIXLab, KAIST. I won the best research award from 2019 Fall Brain-Mind-Behavior independent research presentation. </font><br> 
+<p style="text-align:justify;">
+  <font size="2"> 
+   
+This research project was conducted for 2019 Fall Brain-Mind-Behavior independent research course in Seoul National University. It was an extension of work in  the summer internship at KIXLab, KAIST, where I developed a speech act classifier for speech act based chatbot project. I won the best research award from 2019 Fall Brain-Mind-Behavior independent research presentation. <br> In this research, I implemented LSTM based RNN model using pretrained word embedding model. I also designed a self-attentive pooling method to produce sentence-wise embedding and compared the method with existing methods. Lastly, the attention layer was used for qualitative analysis of feature attribution. There are details in the article below.
+ 
+ 
+ </font><br> 
+</p>
+<p style="text-align:center;"><font size="5">  <br> Intro  </font><br> <br> </p>
 
 <p style="text-align:justify;">
 Speech act (or Dialogue act) means a role of each utterance within a dialogue, such as command, question, or acknowledgement. Speech act focuses on “what language does” and analyzing one’s speech act can infer the speaker's intention and status. As understanding speakers’ intention and status is critical for a human-like conversation, the automatic speech act recognition has a great potential to improve automatic dialogue application, such as a chatbot. <br><br> 
@@ -106,8 +114,8 @@ The pooling method using Attention Mechanism allow us to intuitively interpret t
 
 
 
-
-Reference <br><br>
+<br>
+<font size="4"> Reference </font> <br><br>
 
 [1] Kumar, H., Agarwal, A., Dasgupta, R., Joshi, S., & Kumar, A. (2017). Dialogue Act Sequence Labeling using Hierarchical encoder with CRF. Retrieved from http://arxiv.org/abs/1709.04250 <br><br>
 
