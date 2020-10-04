@@ -18,7 +18,7 @@ I graduated from the Department of Computer Science and Engineering at SNU with 
 Currently, in CCSL, I am investigating the computational methods using Bayesian data analysis and deep learning to analyze human fMRI data combined with behavioral data. Also at KIST, I am applying machine learning to reveal behavioral correlates of transient neural oscillations in mice.
 </p> 
 
-<br> <br>
+<br>
 
 Research Interest
 ======
@@ -30,7 +30,7 @@ Research Interest
 
 [Learn more](https://cheoljun95.github.io/research_interest/)
 
-<br> <br>
+<br>
 
 Experience
 ======
