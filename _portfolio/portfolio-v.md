@@ -7,18 +7,26 @@ collection: portfolio
 
 <img src='/images/NS-GQA_2.png' class="center" width='1000' height='700'> <br>
 
-<font size="2"> This research project was conducted for Bachelor’s Thesis of the department of Computer Science and Engineering at Seoul National University. </font><br> 
+
+<p style="text-align:justify;">
+<font size="2"> 
+   This research project was conducted for Bachelor’s Thesis of the department of Computer Science and Engineering at Seoul National University. Here, I tried combining the neural symbolic approach with the scene graph generation technique to tackle the Visual Question Answer task. I mainly focused on the capability of the neural symbolic approach in the GQA dataset, which is close to the real-world data. However, it was not successful, unlike this neural symbolic approach was successful in CLEVR shown by Yi et al. (2018). The performance bottleneck seems to be inferior performance of scene graph generation. There are details in the article below. 
+   
+   </font><br> 
+</p>
+
+<p style="text-align:center;"><font size="5">  <br> Intro  </font><br> <br> </p>
 
 <p style="text-align:justify;">
 Visual Question Answer (VQA) is an artificial intelligence (AI) task that answers questions based on images. This is a task that can comprehensively evaluate AI's perceptual ability and reasoning ability, where AI should interpret given questions and deduce answers based on the relationship between recognized objects. In other words, the ability to understand the relationship between objects must be good first, and the second must be to understand what the questionnaire requires and what reasoning should be done. Finally, the ability to draw conclusions by aggregating visually recognized information and instructions extracted from natural language is needed. The system proposed in NS-VQA[1] consists of modules responsible for each of these three essential capabilities. <br> <br>
 
 The most efficient form of data in the task of reasoning based on relationship information is a graph [4]. In the field of computer vision, this is a Scene Graph Generation (SGG) task that recognizes not only objects but also relationships between objects [6], [7], [8]. Most existing VQA models utilize the end-to-end model [10] that combines natural language processing modules with object recognition models, and the latest [1],[9], and [11] have the form of a Modular Network model based on SGGG. [1] uses the symbol as it is, while [9], [11] uses the method of learning the embedding of the symbol. <br> <br>
 
-This study uses the NS-VQA approach of [1]. In [1], the applied CLEVR dataset is a dataset with very limited types and properties of objects. Conversely, a GQA dataset is a dataset that is closer to the real-world by encompassing hundreds of types, attributes, and relationships. Also, the dataset provides a label for the Symbolic program. This study aims to apply the NS-VQA system to GQA datasets. The system is composed of the following three modules: a detector module that generates a scene graph from an image, an encoder module that extracts a symbolic program from a natural language question, and an executor module that yields the answer from the scene graph and the symbolic program. In this study, the performance of the system without end-to-end learning is reported, and the limitation of NS-VQA approach for the real-world is analyzed. <br><br>
+This study uses the NS-VQA approach of [1]. In [1], the applied CLEVR dataset is a dataset with very limited types and properties of objects. Conversely, a GQA dataset [3] is a dataset that is closer to the real-world by encompassing hundreds of types, attributes, and relationships. Also, the dataset provides a label for the Symbolic program. This study aims to apply the NS-VQA system to GQA datasets. The system is composed of the following three modules: a detector module that generates a scene graph from an image, an encoder module that extracts a symbolic program from a natural language question, and an executor module that yields the answer from the scene graph and the symbolic program. In this study, the performance of the system without end-to-end learning is reported, and the limitation of NS-VQA approach for the real-world is analyzed. <br><br>
 
 <p style="text-align:center;"><font size="5">  <br> Method  </font><br> <br> </p>
 
-Detector Module <br><br>
+<b> Detector Module </b> <br><br>
 
 </p>
    
@@ -37,7 +45,7 @@ For the object detection model, ResNet was used as the backbone of the Faster-RC
 
 For inferring relations in the form of a graph, the Neural Motif [7] method was introduced. In the method, the relationships of objects are inferred considering the given context. In this study, Transformer [15] was used as a module to calculate the context of the image. Due to the fact that the number of labels is 200, which is four times higher than [7], but has less data, this study adopted the predicate classification paradigm where the model learns to infer relations (predicates) from the ground truth boxes and labels. <br><br>
 
-<br><br>Encoder Module <br><br>
+<br><br><br> <b> Encoder Module </b><br><br>
 
 Encoder module functions to convert a given natural language question into a symbolic program. Before entering, I would like to explain the Symbolic program approach introduced in this study. <br><br>
 
@@ -56,7 +64,7 @@ All values for "n,r,o" are binary, i.e. 0 or 1. "n" indicates when the construct
    
 The architecture of the encoder model is a Seq2seq model, as both input and output data are sequences. The model utilizes biLSTM combined with attention mechanism, followed by the method of [17]. The word embedding was initialized with GloVe [18]. The input consists of words from a natural language question and yields a sequence of symbols, instructions, and their types. <br><br>
 
-<br><br>Executer Module <br><br>
+<br><br><br><b> Executer Module </b><br><br>
 
 </p>
    
@@ -119,11 +127,12 @@ The preceding analysis suggests that the NS-VQA system is not scalable for the c
 Finally, the introduction of the aforementioned embedding also mitigates the degradation of the detector module but is not a fundamental solution. It is difficult to implement a complete cognitive model with simple visual or natural language data alone. The vision model, such as object recognition or SGG, is simply a statistical model of the distribution of given visual data and the extracted visual representation, not a model of the world that is actually formed within a human brain. This essential problem means that there is an innate performance limit for VQA tasks. <br><br>
     
    
-<br><br> Reference <br><br>
+<br><br><br> Reference <br><br>
 
 [1] Yi, K., Torralba, A., Wu, J., Kohli, P., Gan, C., and Tenenbaum, J. B. (2018). Neural-symbolic VQA: Disentangling reasoning from vision and language understanding. Advances in Neural Information Processing Systems (NeurIPS), 1031–1042, 2018.<br><br>
 
 [2] J. Johnson, B. Hariharan, L. Maaten, J. Hoffman, L. Fei-Fei, L. Zitnick, and R. Girshick (2018). Inferring and executing programs for visual reasoning. In IEEE international conference on computer vision (ICCV), 2017b.<br><br>
+
 [3] D. Hudson and C. D Manning (2019). GQA: A new dataset for real-world visual reasoning and compositional question answering. In Conference on Computer Vision and Pattern Recognition (CVPR), 2019.<br><br>
 
 [4] Battaglia, P. W., Hamrick, J. B., Bapst, V., Sanchez-Gonzalez, A., Zambaldi, V., Malinowski, M., … Pascanu, R. (2018). Relational inductive biases, deep learning, and graph networks. 1–40. <br><br>
@@ -155,4 +164,3 @@ Finally, the introduction of the aforementioned embedding also mitigates the deg
 [17] M. Luong, H. Pham, and C. Manning (2015). Effective approaches to attention-based neural machine translation. In Conference on Empirical Methods in Natural Language Processing (EMNLP), 2015.<br><br>
 
 [18] J. Pennington, R. Socher, and C. Manning. Glove: Global vectors for word representation. In Conference on Empirical Methods in Natural Language Processing (EMNLP), 2014.<br><br>
-
