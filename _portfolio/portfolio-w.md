@@ -82,7 +82,8 @@ SwDA (Switch Board Dialogue Act Corpus, 2000) dataset is used to test the perfor
 Adam optimizer is used and the initial learning rate is set to 0.01. After 100 epochs, the learning rate is lowered to 0.0001 for fine tuning. The dimension size for hidden states in all Bi-LSTM is 128, the batch size is 128, and the dropout rate is 0.2. The dimension of Attention Module is 16. Embedding layer utilizes the pretrained model (Glove [4]) without extra learning. The word length for each utterance is fixed to 36 with zero-padding. For training, 8 pieces of consecutive utterance are used as input, and the entire conversation for evaluation to calculate the accuracy. It was implemented in Python 3.6 using Pytorch 1.10 and trained using NVIDIA Titan X GPU (12GB). <br> <br>
 
 <p style="text-align:center;"><font size="5">  <br> Results  </font><br> <br> </p>
-Comparison of Pooling Methods <br> <br>
+
+<b> Comparison of Pooling Methods </b> <br> <br>
 
 </p>
    
