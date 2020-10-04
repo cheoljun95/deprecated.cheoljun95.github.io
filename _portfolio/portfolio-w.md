@@ -38,7 +38,7 @@ Many studies have been done on converting natural words to numerical data. Simpl
 
 <p style="text-align:center;"><font size="5">  <br> Method  </font><br> <br> </p>
 
-Building Block<br><br>
+<b> Building Block </b> <br><br>
 
  </p>
    
