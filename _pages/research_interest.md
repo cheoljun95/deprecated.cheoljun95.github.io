@@ -10,7 +10,7 @@ redirect_from:
 {% include base_path %}
 <br>
 - **Decoding Human Brain & Mind** <br>
-<p style='text-align: justify;'> How do objects or any kind of concepts are represented in human brains? What is the underlying process of the human mind and how does such a process lead to our behaviors? I believe solutions for these questions will lead to a better understanding of general intelligence. I am mainly focused on the computational approach, applying various machine learning techniques to brain data (e.g. fMRI, EEG). </p>
+<p style='text-align: justify;'> How do objects or any kind of concepts are represented in human brains? What is the underlying process of the human mind and how does such a process lead to our behaviors? I am mainly focused on the computational approach to solve these questions, applying various machine learning techniques to brain data (e.g. fMRI, EEG). </p>
 
 - **Neural basis of Intelligence** <br>
 <p style='text-align: justify;'> I am interested in the field of computational neuroscience to investigate the fundamental basis of intelligence. As the mechanisms underlying the brain are too complex, the implications from reductive and constrained experiments are not sufficient to understand the brain, even though they might entail strong inference. However, there are analytical challenges in naturalistic experiments, where subjects' behaviors are un- or less constrained. I believe the challenges can be tackled by applying machine learning techniques, and it will lead to better understanding of the human brain. </p>
