@@ -23,9 +23,9 @@ Currently, in CCSL, I am investigating the computational methods using Bayesian 
 Research Interest
 ======
 
-- **Decoding Human Brain & Mind**
-- **Human-level Artificial Intelligence**
-- **Computational basis of Intelligence** 
+- Decoding Human Brain & Mind
+- Computational basis of Intelligence
+- Human-level Artificial Intelligence
 <br>
 
 [Learn more](https://cheoljun95.github.io/research_interest/)
