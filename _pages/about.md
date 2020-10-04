@@ -24,7 +24,7 @@ Research Interest
 ======
 
 - Decoding Human Brain & Mind
-- Computational basis of Intelligence
+- Neural basis of Intelligence
 - Human-level Artificial Intelligence
 <br>
 
