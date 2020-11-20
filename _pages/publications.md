@@ -20,6 +20,6 @@ Socially Interacting Mice through Mobile Edge Computing (MEC), **_Science Advanc
 
 Lee, Y. __Cho, C.J.\*__, Kim, J., Kim, J.H., Han, H., Ahn, W., Choi, J.H., Investigation of hierarchy-dependency in
 the intragroup vigilance convergence and transmission, the 23rd annual meeting of **_the Korean Society for Brain
-and Neural Sciences, poster presentation_** (2020), _Selected as excellent poster_ 
+and Neural Sciences, poster presentation_**, _Selected as excellent poster_ (2020)
 
 (\* equal contribution)
