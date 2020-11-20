@@ -35,6 +35,6 @@ Experience
 ======
 
 - *Research Intern;* <a href="https://www.jeelab.net/">JeeLab</a>, Center for Neuroscience, Brain Science Institute, KIST, Seoul, Korea (Jul 2020 - Present)
-- *Research Assistant;* Computational Clinical Science Laboratory, SNU, Seoul, Korea (Jul 2020 - Present)
-- *Summer Research Intern;* KAIST Interaction Laboratory, KAIST, Daejeon, Korea (Jun 2019 - Aug 2019)
-- *Research Intern;* Computing and Memory Architecture Laboratory, SNU, Seoul, Korea (Dec 2018 - Jun 2019)
+- *Research Assistant;* <a href="https://ccs-lab.github.io/">Computational Clinical Science Laboratory</a>, SNU, Seoul, Korea (Jul 2020 - Present)
+- *Summer Research Intern;* <a href="https://www.kixlab.org/">KAIST Interaction Laboratory</a>, KAIST, Daejeon, Korea (Jun 2019 - Aug 2019)
+- *Research Intern;* <a href="http://cmalab.snu.ac.kr/">Computing and Memory Architecture Laboratory</a>, SNU, Seoul, Korea (Dec 2018 - Jun 2019)
