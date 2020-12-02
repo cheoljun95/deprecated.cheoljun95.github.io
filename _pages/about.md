@@ -13,8 +13,8 @@ redirect_from:
   
 Hi, I am a full-time research assistant at Computational Clinical Science Lab. (CCSL), Seoul National University (SNU). I am also a visiting research intern at the Center for Neuroscience, Brain Science Institute, Korea Institute of Science and Technology (KIST). My interest lies in artificial intelligence, cognitive neuroscience, and computational neuroscience. My goal is to reveal how the human mind emerges from the brain and to investigate how we can artificially build the human mind. To this end, I am eager to combine knowledge from cognitive science and neuroscience and technologies from computer science. <br><br>
 
-I graduated from the Department of Computer Science and Engineering at SNU with the valedictorian honor, and while I was an undergraduate student, I participated in a wide range of projects including computer vision, natural language processing, robotics and computational modeling in cognitive science. Please refer to <a href="https://cheoljun95.github.io/portfolio/">my Past Projects</a>.<br><br>
-Currently, in CCSL, I am investigating the computational methods using Bayesian data analysis and deep learning to analyze human fMRI data combined with behavioral data. Also at KIST, I am applying machine learning to reveal behavioral correlates of transient neural oscillations in mice.
+I graduated from the Department of Computer Science and Engineering at SNU with the valedictorian honor, and I have participated in a wide range of projects including computer vision, natural language processing, robotics and computational modeling in cognitive science. Please refer to <a href="https://cheoljun95.github.io/portfolio/">my Past Projects</a>.<br><br>
+Currently, in CCSL, I am developing computational tools to analyze human fMRI data aligned with behavioral data. Additionally in KIST, I was involved in a project developing a novel wireless neuro reporting platform, and now I am conducting further data analysis.
 </p> 
 
 <br>
