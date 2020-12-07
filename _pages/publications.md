@@ -15,11 +15,12 @@ author_profile: true
   {% include archive-single.html %}
 {% endfor %}
 
-Kim, J., Kim, C.\*, Han, H., __Cho, C.J.__, Yeom, W., Lee, S.Q\*, Choi, J.H.\*, A Bird’s Eye View of Brain Activity in
-Socially Interacting Mice through Mobile Edge Computing (MEC), **_Science Advances_**, _In press_ (2020)
+Kim, J., Kim, C.\*, Han, H., __Cho, C.J.__, Yeom, W., Lee, S.Q\*, Choi, J.H.\* (2020), A Bird’s Eye View of Brain Activity in
+Socially Interacting Mice through Mobile Edge Computing (MEC), **_Science Advances_**, 6(49), eabb9841.
+
 
 Lee, Y., __Cho, C.J.\*__, Kim, J., Kim, J.H., Han, H., Ahn, W., Choi, J.H., Investigation of hierarchy-dependency in
-the intragroup vigilance convergence and transmission, the 23rd annual meeting of **_the Korean Society for Brain
-and Neural Sciences, poster presentation_** (2020) _-- selected as excellent poster_
+the intragroup vigilance convergence and transmission (2020), the 23rd annual meeting of **_the Korean Society for Brain
+and Neural Sciences, poster presentation_**. _-- selected as excellent poster_
 
 (\* equal contribution)
