@@ -33,7 +33,7 @@ Research Interest
 Experience
 ======
 
-- *PHD Student;* the Department of Electrical Engineering & Computer Sciences, UC Berkeley, Berkeley CA (Aug 2021 - Present)
+- *PHD Student;* EECS UC Berkeley, Berkeley CA (Aug 2021 - Present)
 - *Research Assistant;* <a href="https://ccs-lab.github.io/">Computational Clinical Science Laboratory</a>, SNU, Seoul, Korea (Sep 2020 - Jul 2021)
 - *Research Intern;* <a href="https://www.jeelab.net/">JeeLab</a>, Center for Neuroscience, Brain Science Institute, KIST, Seoul, Korea (Jul 2020 - Dec 2020)
 - *Summer Research Intern;* <a href="https://www.kixlab.org/">KAIST Interaction Laboratory</a>, KAIST, Daejeon, Korea (Jun 2019 - Aug 2019)
