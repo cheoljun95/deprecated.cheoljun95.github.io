@@ -11,7 +11,7 @@ redirect_from:
 # About me 
 <p style='text-align: justify;'><br><br> 
   
-Hi, I am a Ph.D. student at the Department of Electrical Engineering & Computer Sciences, UC Berkeley. My interest lies in artificial intelligence (AI), cognitive neuroscience, and computational neuroscience. My goal is to decode human mind and to reveal how the human mind emerges from the brain. I am also interested in neuroscience-inspired AI to build more robust and human compatible machine intelligence. To this end, I am eager to combine knowledge from cognitive science and neuroscience and technologies from computer science. <br><br>
+Hi, I am a Ph.D. student at the Department of Electrical Engineering & Computer Sciences, UC Berkeley. My interest lies in artificial intelligence (AI), cognitive neuroscience, and computational neuroscience. My goal is to decode the human brain and to reveal how the human mind emerges from the brain. I am also interested in neuroscience-inspired AI to build more robust and human-compatible machine intelligence. To this end, I am eager to combine knowledge from cognitive science and neuroscience and technologies from computer science. <br><br>
 
 I graduated from the Department of Computer Science and Engineering at SNU with the valedictorian honor, and I have participated in a wide range of projects including computer vision, natural language processing, robotics and computational modeling in cognitive science. Please refer to <a href="https://cheoljun95.github.io/portfolio/">my Past Projects</a>.<br><br>
 </p> 
