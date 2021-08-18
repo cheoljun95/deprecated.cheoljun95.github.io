@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Cheol Jun Cho"
 title_separator          : "-"
 name                     : &name "Cheol Jun Cho"
-description              : &description "Research Assistant at Computational Clinical Science Lab."
+description              : &description "Ph.D. student at EECS, UC Berkeley"
 url                      : https://cheoljun95.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "cheoljun95/cheoljun95.github.io"
@@ -81,8 +81,8 @@ analytics:
 # Site Author
 author:
   name             : "Cheol Jun Cho"
-  avatar           : "venice_beach.jpg"
-  bio              : "Research Assistant at Computational Clinical Science Laboratory, Seoul National University"
+  avatar           : "graduation.jpg"
+  bio              : "Ph.D. student at the Department of Electrical Engineering & Computer Sciences, UC Berkeley"
   location         : #"Location"
   employer         :
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
