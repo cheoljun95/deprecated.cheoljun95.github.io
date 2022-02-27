@@ -6,8 +6,8 @@ main:
   - title: "CV"
     url: https://cheoljun95.github.io/files/CheolJunCho_CV_08192021.pdf
 
-  - title: "Past Projects"
-    url: /portfolio/
+ # - title: "Past Projects"
+   #url: /portfolio/
         
   #- title: "Blog Posts"
     #url: /year-archive/
